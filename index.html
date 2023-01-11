@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's Determine Your Network.</h1>
+    <label for="name"><b>NAME</b></label>
+    <input type="text" placeholder="Enter Your Name"/>
+    
+    <label for="Phone Number"><b>PHONE NUMBER</b></label>
+    <input
+    name="phone_number"
+    onkeyup="checkPhoneNumber(event)"
+    type="tel"
+    pattern="^0[0-9]{10}"
+    type="tel"
+    placeholder="Phone Number"
+    maxlength="11"
+    />
+    <span id="network"></span>
+    </div>
+  </body>
+</html>
